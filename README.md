@@ -1,6 +1,6 @@
 # Finovate
 
-Finovate is a web-based financial management system designed to help users efficiently manage their personal finances. The platform enables users to monitor income, expenses, and financial records through an intuitive and user-friendly interface while providing administrators with tools to manage system data.
+Finovate is a simple web-based financial management system designed to help users efficiently manage their personal finances. The platform enables users to monitor income, expenses, and financial records through an intuitive and user-friendly interface while providing administrators with tools to manage system data.
 
 # Problem It Solves
 
