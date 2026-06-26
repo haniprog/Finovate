@@ -1,0 +1,50 @@
+{
+  "demo": {
+    "id": 1,
+    "username": "demo",
+    "email": "demo@finovate.local",
+    "password": "2ac4757802ddfa9540f285b04d7ba282b55f206b9a4700c11010ebc410cdb4ab",
+    "full_name": "Demo User",
+    "status": "active",
+    "two_factor_enabled": true,
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  "test": {
+    "id": 2,
+    "username": "test",
+    "email": "test@finovate.local",
+    "password": "849f1575ccfbf3a4d6cf00e6c5641b7fd4da2ed3e212c2d79ba9161a5a432ff0",
+    "full_name": "Test User",
+    "status": "active",
+    "two_factor_enabled": true,
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  "demouser": {
+    "id": 1779028620032,
+    "username": "demouser",
+    "email": "demo@test.com",
+    "password": "0b44fac8f199be8f75b6af134daac6bed42e2dc38316382ed026ee61ec319735",
+    "full_name": "Demo User",
+    "status": "active",
+    "created_at": "2026-05-17T14:37:00.033Z"
+  },
+  "hanamar23": {
+    "id": 1779043876950,
+    "username": "hanamar23",
+    "email": "delgado.hannahlette.talamisan@gmail.com",
+    "password": "7674dd6e0763995763092978fe8c1808b09f020473ae6b69d4a79ff42ad0ef90",
+    "full_name": "Hannah Marie",
+    "status": "active",
+    "created_at": "2026-05-17T18:51:16.951Z"
+  },
+  "hannah0823": {
+    "id": 1779641278309,
+    "username": "hannah0823",
+    "email": "hannahlettedelgado548@gmail.com",
+    "password": "25b1e52a62353f2f1045527c4b471064ba6e2d6b2d0e63db539fef58ec7ff0e0",
+    "full_name": "hannah123",
+    "status": "active",
+    "two_factor_enabled": true,
+    "created_at": "2026-05-24T16:47:58.309Z"
+  }
+}

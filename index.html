@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finovate | Future of Finance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/api-ui.css">
+</head>
+<body id="top">
+    <header>
+        <div class="logo">
+            <div class="logo-img" aria-label="Finovate logo" role="img">
+                <img src="assets/images/logo.png" alt="Finovate logo">
+            </div>
+            <span>Finovate</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#top" class="active">Home</a></li>
+                <li><a href="#features-section">Features</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li class="landing-auth-only"><a href="#categories">Categories</a></li>
+                <li><a href="dashboard/dashboard.html">Dashboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-auth-buttons">
+                <button type="button" class="header-auth-btn" data-auth-open="login">Log In</button>
+                <button type="button" class="header-auth-btn header-auth-btn-primary" data-auth-open="signup">Sign Up</button>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="subtitle">WELCOME TO</p>
+            <h1>Finovate</h1>
+            <p class="description">
+                Empowering you to take control of your finances and build better financial habits.
+            </p>
+            <div class="hero-actions">
+                <button type="button" class="cta-button" data-auth-open="signup">Get Started ➜</button>
+            </div>
+        </section>
+
+        <section id="features-section" class="features-section">
+            <div class="features-heading">
+                <div class="features-logo" aria-hidden="true">
+                    <img src="assets/images/logo.png" alt="Finovate logo">
+                </div>
+                <h2>FEATURES</h2>
+            </div>
+            <div class="feature-cards-grid">
+                <article class="feature-card"><span class="feature-icon">💰</span><strong>Expense Tracking</strong></article>
+                <article class="feature-card"><span class="feature-icon">📊</span><strong>Automated Budget Planning</strong></article>
+                <article class="feature-card"><span class="feature-icon">💡</span><strong>Saving Recommendations</strong></article>
+                <article class="feature-card"><span class="feature-icon">📈</span><strong>Financial Forecasting</strong></article>
+                <article class="feature-card"><span class="feature-icon">🏦</span><strong>Investment Suggestions</strong></article>
+            </div>
+        </section>
+
+        <section id="guides" class="steps-box">
+            <div class="guide-block">
+                <h2>User Guides</h2>
+                <ol class="steps-list">
+                    <li>Navigate the Dashboard</li>
+                    <li>Setting Up an Account</li>
+                    <li>Using Financial Tools</li>
+                    <li>Tracking Expenses and Income</li>
+                    <li>Setting and Monitoring Goals</li>
+                </ol>
+            </div>
+            <aside class="tip-block">
+                <h3>Tips</h3>
+                <ul class="tips-list">
+                    <li><strong>Stay Consistent</strong>: Update income and expenses regularly.</li>
+                    <li><strong>Explore Features</strong>: Utilize all tools for better financial management.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="categories" class="categories-section landing-auth-only" aria-labelledby="categories-heading">
+            <h2 id="categories-heading">Categories</h2>
+            <p class="categories-intro">Pick a focus area to see how Finovate can help.</p>
+            <div class="category-tabs" role="tablist" aria-label="Financial categories">
+                <button type="button" class="category-tab active" role="tab" aria-selected="true" data-category="budgeting" id="tab-cat-budgeting">Budgeting</button>
+                <button type="button" class="category-tab" role="tab" aria-selected="false" data-category="investing" id="tab-cat-investing">Investing</button>
+                <button type="button" class="category-tab" role="tab" aria-selected="false" data-category="savings" id="tab-cat-savings">Savings</button>
+                <button type="button" class="category-tab" role="tab" aria-selected="false" data-category="debt" id="tab-cat-debt">Debt</button>
+            </div>
+            <div class="category-panel" role="tabpanel" id="category-panel" aria-live="polite">
+                <p class="category-panel-text" data-category-desc>
+                    Track spending, set limits per category, and get alerts before you overspend.
+                </p>
+            </div>
+        </section>
+
+        <footer id="contact" class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-col footer-about">
+                    <div class="footer-brand">
+                        <img class="footer-brand-logo" src="assets/images/logo.png" alt="Finovate logo">
+                        <div>
+                            <h3 class="footer-title">Finovate</h3>
+                            <p class="footer-text">Empowering better financial habits through simple budgeting and saving tips.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#features-section">Features</a></li>
+                        <li><a href="#guides">Guides</a></li>
+                        <li><a href="dashboard/dashboard.html">Dashboard</a></li>
+                        <li><button type="button" class="footer-link-button" data-auth-open="signup">Sign Up</button></li>
+                        <li><button type="button" class="footer-link-button" data-auth-open="login">Log In</button></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-support">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-list">
+                        <li><a href="#top">User Guide</a></li>
+                        <li><a href="#top">Help Center</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contact-line">
+                        <span class="footer-icon" aria-hidden="true">✉</span>
+                        <a href="mailto:finovate@gmail.com">finovate@gmail.com</a>
+                    </div>
+                    <p class="footer-text footer-text-subtle">We&apos;d love to hear from you.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-bottom-text">© 2026 Finovate. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script type="module">
+      import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+      window.supabaseClient = createClient(
+        'https://pevpsjgkvbhxtnkrejrf.supabase.co',
+        'sb_publishable_FwQBEMW7ww0f-gNdJEYxpA_0d5vmgwD'
+      );
+    </script>
+    <script defer src="script.js"></script>
+</body>
+</html>

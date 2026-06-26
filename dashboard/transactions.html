@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finovate | Transactions</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-body dash-gate-pending">
+    <div class="dash-app">
+        <aside class="dash-sidebar" id="dash-sidebar" aria-label="Main navigation">
+            <a href="../index.html" class="dash-sidebar-brand">
+                <img src="../assets/images/logo.png" width="36" height="36" alt="Finovate logo">
+                <span>Finovate</span>
+            </a>
+
+            <nav class="dash-sidebar-nav" aria-label="App sections">
+                <a href="dashboard.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    Dashboard
+                </a>
+                <a href="portfolio.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                    Portfolio
+                </a>
+                <a href="transactions.html" class="dash-nav-link active" aria-current="page">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                    Transactions
+                </a>
+                <a href="insights.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                    Insights
+                </a>
+                <a href="budgeting.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z"/><path d="M5 11h14"/><circle cx="18" cy="11" r="1"/></svg>
+                    Budgeting
+                </a>
+                <a href="market.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                    Market Data
+                </a>
+                <a href="alerts.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    Alerts
+                </a>
+            </nav>
+
+            <div class="dash-sidebar-divider" role="presentation"></div>
+
+            <nav class="dash-sidebar-nav dash-sidebar-nav--secondary" aria-label="Account">
+                <a href="profile.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    My Profile
+                </a>
+                <a href="settings.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    Settings
+                </a>
+                <a href="help.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    Help &amp; Support
+                </a>
+            </nav>
+
+            <button type="button" class="dash-nav-logout" id="dash-logout-btn">
+                <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Log Out
+            </button>
+        </aside>
+
+        <div class="dash-workspace">
+            <header class="dash-topbar">
+                <button type="button" class="dash-sidebar-toggle" id="dash-sidebar-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="dash-sidebar">☰</button>
+                <div class="dash-topbar-spacer"></div>
+                <button type="button" class="dash-icon-btn" aria-label="Notifications">🔔</button>
+                <a href="profile.html" class="dash-avatar" id="dash-profile-link" aria-label="My profile">JD</a>
+            </header>
+
+            <main class="dash-main">
+                <div class="dash-page-title-row">
+                    <div>
+                        <h1 class="dash-title">Transactions</h1>
+                        <p class="dash-subtitle">View and manage your transaction history.</p>
+                    </div>
+                </div>
+
+                <div class="dash-search-row">
+                    <div class="dash-search-field">
+                        <input id="tx-search-input" class="dash-search-input" type="search" placeholder="Search transactions..." aria-label="Search transactions">
+                    </div>
+                    <div class="dash-pill-group" role="group" aria-label="Transaction filters">
+                        <button type="button" class="dash-pill active" data-filter="all">All</button>
+                        <button type="button" class="dash-pill" data-filter="income">Income</button>
+                        <button type="button" class="dash-pill" data-filter="expense">Expense</button>
+                        <button type="button" class="dash-pill" data-filter="investment">Investment</button>
+                    </div>
+                </div>
+
+                <div id="tx-add-form-wrap" class="dash-card tx-add-form-wrap" hidden>
+                    <div class="dash-card-head">
+                        <h2 class="tx-add-form-title">Add transaction</h2>
+                        <span class="dash-pill dash-pill--small">Saved on this device</span>
+                    </div>
+                    <form id="tx-add-form" class="tx-add-form">
+                        <div class="tx-add-form-grid">
+                            <label class="tx-add-field">
+                                <span>Date</span>
+                                <input id="tx-add-date" name="date" type="date" required>
+                            </label>
+                            <label class="tx-add-field">
+                                <span>Type</span>
+                                <select id="tx-add-type" name="type" required>
+                                    <option value="income">Income</option>
+                                    <option value="expense">Expense</option>
+                                    <option value="investment">Investment</option>
+                                </select>
+                            </label>
+                            <label class="tx-add-field tx-add-field--wide">
+                                <span>Description</span>
+                                <input id="tx-add-desc" name="description" type="text" placeholder="e.g. Salary deposit" required maxlength="200">
+                            </label>
+                            <label class="tx-add-field">
+                                <span>Category</span>
+                                <input id="tx-add-category" name="category" type="text" placeholder="e.g. Food" required maxlength="80">
+                            </label>
+                            <label class="tx-add-field">
+                                <span>Amount (PHP)</span>
+                                <input id="tx-add-amount" name="amount" type="number" min="0" step="0.01" placeholder="0.00" required>
+                            </label>
+                        </div>
+                        <div class="tx-add-form-actions">
+                            <button type="submit" class="dash-action-button" id="tx-add-submit">Save transaction</button>
+                        </div>
+                    </form>
+                </div>
+
+                <section class="dash-card" aria-labelledby="transactions-heading">
+                    <div class="dash-card-head">
+                        <h2 id="transactions-heading">All Transactions</h2>
+                        <span class="dash-pill dash-pill--small">Latest activity</span>
+                    </div>
+                    <div id="tx-empty-account" class="dash-tx-empty" hidden>
+                        <p class="dash-tx-empty-title">Account not found.</p>
+                        <p class="dash-tx-empty-text">Please create one by clicking <a href="auth.html#signup">Sign Up</a>.</p>
+                    </div>
+                    <div id="tx-empty-list" class="dash-tx-empty dash-tx-empty--muted" hidden>
+                        <p class="dash-tx-empty-title">No transactions yet</p>
+                        <p class="dash-tx-empty-text">Add your first transaction using the form above. Entries are stored in your browser.</p>
+                    </div>
+                    <div id="tx-empty-search" class="dash-tx-empty dash-tx-empty--muted" hidden>
+                        <p class="dash-tx-empty-title">No transactions match your search.</p>
+                        <p class="dash-tx-empty-text">Try different keywords or clear filters.</p>
+                    </div>
+                    <div id="tx-table-block" class="dash-table-wrap">
+                        <table class="dash-table dash-tx-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Category</th>
+                                    <th>Type</th>
+                                    <th>Amount</th>
+                                    <th class="dash-tx-actions">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tx-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script type="module">
+      import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+      window.supabaseClient = createClient(
+        'https://pevpsjgkvbhxtnkrejrf.supabase.co',
+        'sb_publishable_FwQBEMW7ww0f-gNdJEYxpA_0d5vmgwD'
+      );
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script defer src="js/dash-auth.js?v=4"></script>
+    <script defer src="js/dash-profile.js?v=4"></script>
+    <script defer src="js/dashboard.js"></script>
+</body>
+</html>

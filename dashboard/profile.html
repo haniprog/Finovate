@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finovate | My Profile</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-body dash-gate-pending">
+    <div class="dash-app">
+        <aside class="dash-sidebar" id="dash-sidebar" aria-label="Main navigation">
+            <a href="../index.html" class="dash-sidebar-brand">
+                <img src="../assets/images/logo.png" width="36" height="36" alt="Finovate logo">
+                <span>Finovate</span>
+            </a>
+
+            <nav class="dash-sidebar-nav" aria-label="App sections">
+                <a href="dashboard.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    Dashboard
+                </a>
+                <a href="portfolio.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                    Portfolio
+                </a>
+                <a href="transactions.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                    Transactions
+                </a>
+                <a href="insights.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                    Insights
+                </a>
+                <a href="budgeting.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z"/><path d="M5 11h14"/><circle cx="18" cy="11" r="1"/></svg>
+                    Budgeting
+                </a>
+                <a href="market.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                    Market Data
+                </a>
+                <a href="alerts.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    Alerts
+                </a>
+            </nav>
+
+            <div class="dash-sidebar-divider" role="presentation"></div>
+
+            <nav class="dash-sidebar-nav dash-sidebar-nav--secondary" aria-label="Account">
+                <a href="profile.html" class="dash-nav-link active" aria-current="page">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    My Profile
+                </a>
+                <a href="settings.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    Settings
+                </a>
+                <a href="help.html" class="dash-nav-link">
+                    <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    Help &amp; Support
+                </a>
+            </nav>
+
+            <button type="button" class="dash-nav-logout" id="dash-logout-btn">
+                <svg class="dash-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Log Out
+            </button>
+        </aside>
+
+        <div class="dash-workspace">
+            <header class="dash-topbar">
+                <button type="button" class="dash-sidebar-toggle" id="dash-sidebar-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="dash-sidebar">☰</button>
+                <div class="dash-topbar-spacer"></div>
+                <button type="button" class="dash-icon-btn" aria-label="Notifications">🔔</button>
+                <a href="profile.html" class="dash-avatar" id="dash-profile-link" aria-label="My profile">JD</a>
+            </header>
+
+            <main class="dash-main profile-main">
+                <h1 class="dash-title profile-page-title">My Profile</h1>
+                <p class="dash-subtitle profile-page-sub">Your personal and financial overview</p>
+
+                <section class="dash-card profile-hero-card" aria-labelledby="profile-display-name">
+                    <div class="profile-hero-grid">
+                        <div class="profile-hero-avatar-wrap">
+                            <div class="profile-hero-avatar" id="profile-hero-avatar" aria-hidden="true">JD</div>
+                        </div>
+                        <div class="profile-hero-copy">
+                            <div class="profile-name-row">
+                                <div>
+                                    <h2 id="profile-display-name" class="profile-display-name">—</h2>
+                                    <p class="profile-username" id="profile-display-username">@username</p>
+                                </div>
+                                <button type="button" class="profile-edit-btn" id="profile-edit-btn" aria-label="Edit profile" title="Edit profile">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                                </button>
+                            </div>
+                            <ul class="profile-detail-list">
+                                <li class="profile-detail-row">
+                                    <span class="profile-detail-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                    </span>
+                                    <span id="profile-row-email">—</span>
+                                </li>
+                                <li class="profile-detail-row">
+                                    <span class="profile-detail-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    </span>
+                                    <span id="profile-row-phone">—</span>
+                                </li>
+                                <li class="profile-detail-row">
+                                    <span class="profile-detail-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    </span>
+                                    <span id="profile-row-location">—</span>
+                                </li>
+                                <li class="profile-detail-row">
+                                    <span class="profile-detail-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                                    </span>
+                                    <span id="profile-row-job">—</span>
+                                </li>
+                                <li class="profile-detail-row">
+                                    <span class="profile-detail-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    </span>
+                                    <span id="profile-row-joined">—</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dash-card profile-edit-card hidden" id="profile-edit-section" aria-labelledby="profile-edit-heading">
+                    <div class="dash-card-head">
+                        <h2 id="profile-edit-heading">Edit Profile</h2>
+                        <p class="dash-section-hint">Update your personal details and avatar.</p>
+                    </div>
+                    <form id="profile-edit-form" class="profile-form">
+                        <div class="profile-input-row">
+                            <label for="profile-full-name">Full name</label>
+                            <input id="profile-full-name" type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="profile-username">Username</label>
+                            <input id="profile-username" type="text" placeholder="Enter your username">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="profile-email">Email</label>
+                            <input id="profile-email" type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="profile-phone">Phone</label>
+                            <input id="profile-phone" type="text" placeholder="Enter your phone number">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="profile-location">Location</label>
+                            <input id="profile-location" type="text" placeholder="Enter your location">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="profile-occupation">Occupation</label>
+                            <input id="profile-occupation" type="text" placeholder="Enter your occupation">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="profile-photo-upload">Upload photo</label>
+                            <p class="profile-photo-hint" id="profile-photo-hint">
+                                Please upload your profile picture in JPG, JPEG, PNG, or GIF format.
+                                The maximum file size for the profile picture is 5MB.
+                            </p>
+                            <input id="profile-photo-upload" type="file" accept=".jpg,.jpeg,.png,.gif,image/jpeg,image/png,image/gif">
+                            <div id="profile-photo-feedback" class="profile-photo-feedback" role="alert" hidden></div>
+                        </div>
+                        <div class="profile-input-row profile-photo-preview-row hidden" id="profile-photo-preview-row">
+                            <label>Photo preview</label>
+                            <img id="profile-photo-preview" class="profile-photo-preview" alt="Profile photo preview" src="" />
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="profile-photo-url">Avatar URL</label>
+                            <input id="profile-photo-url" type="url" placeholder="Enter image URL (optional)">
+                        </div>
+                        <div class="profile-form-actions">
+                            <button type="button" class="dash-action-button" id="profile-save-btn">Save changes</button>
+                            <button type="button" class="dash-action-button dash-action-button--secondary" id="profile-cancel-btn">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="dash-card profile-linked-card" aria-labelledby="profile-linked-heading">
+                    <div class="dash-card-head">
+                        <h2 id="profile-linked-heading">Linked bank &amp; e-wallets</h2>
+                    </div>
+                    <p class="dash-section-hint">Link the bank or e-wallet accounts you use with Finovate for your own reference. This does not connect to real banking APIs—never enter passwords or full account numbers.</p>
+                    <div class="profile-linked-grid">
+                        <div class="profile-input-row">
+                            <label for="link-bank-name">Bank name</label>
+                            <input id="link-bank-name" type="text" placeholder="e.g. BDO, BPI, UnionBank" maxlength="80">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="link-bank-last4">Last 4 digits (optional)</label>
+                            <input id="link-bank-last4" type="text" inputmode="numeric" maxlength="4" placeholder="e.g. 4821" pattern="[0-9]*">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="link-ewallet-provider">E-wallet</label>
+                            <input id="link-ewallet-provider" type="text" placeholder="e.g. GCash, Maya, GrabPay" maxlength="80">
+                        </div>
+                        <div class="profile-input-row">
+                            <label for="link-ewallet-ref">E-wallet mobile / ID (optional)</label>
+                            <input id="link-ewallet-ref" type="text" placeholder="Registered mobile or email" maxlength="120">
+                        </div>
+                        <div class="profile-form-actions profile-linked-actions">
+                            <button type="button" class="dash-action-button" id="profile-linked-save">Save linked accounts</button>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="dash-hero-metrics profile-stats-row" aria-label="Financial summary">
+                    <article class="dash-metric-card">
+                        <span class="dash-metric-icon" aria-hidden="true">📈</span>
+                        <p class="dash-metric-label">Net Worth</p>
+                        <p class="dash-metric-value">₱2,847,500.00</p>
+                        <p class="dash-metric-sub up"><span aria-hidden="true">↑</span> +12.4%</p>
+                    </article>
+                    <article class="dash-metric-card">
+                        <span class="dash-metric-icon" aria-hidden="true">🎯</span>
+                        <p class="dash-metric-label">Savings Goal</p>
+                        <p class="dash-metric-value">₱500,000.00</p>
+                        <div class="dash-metric-bar-wrap" aria-hidden="true"><div class="dash-metric-bar" style="width:72%"></div></div>
+                        <p class="dash-metric-sub">72% achieved</p>
+                    </article>
+                    <article class="dash-metric-card">
+                        <span class="dash-metric-icon" aria-hidden="true">🏅</span>
+                        <p class="dash-metric-label">Credit Score</p>
+                        <p class="dash-metric-value">785</p>
+                        <p class="dash-metric-sub dash-metric-sub--muted">Excellent</p>
+                    </article>
+                </div>
+
+                <section class="dash-card" aria-labelledby="profile-activity-heading">
+                    <div class="dash-card-head">
+                        <h2 id="profile-activity-heading">Recent Activity</h2>
+                        <a class="dash-view-all" href="transactions.html">View all transactions</a>
+                    </div>
+                    <ul id="profile-activity-list" class="dash-activity-list" aria-live="polite">
+                    </ul>
+                </section>
+
+                <section class="dash-card dash-tips-card" aria-labelledby="profile-tips-heading">
+                    <h2 id="profile-tips-heading" class="dash-section-heading">💡 Money-Saving Tips</h2>
+                    <ol class="dash-tips-list">
+                        <li>Automate your savings so you pay yourself first.</li>
+                        <li>Follow the 50/30/20 rule for balanced spending.</li>
+                        <li>Track subscriptions and trim duplicates yearly.</li>
+                        <li>Build an emergency fund before aggressive investing.</li>
+                    </ol>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script type="module">
+      import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+      window.supabaseClient = createClient(
+        'https://pevpsjgkvbhxtnkrejrf.supabase.co',
+        'sb_publishable_FwQBEMW7ww0f-gNdJEYxpA_0d5vmgwD'
+      );
+    </script>
+    <script defer src="js/dash-auth.js?v=4"></script>
+    <script defer src="js/dash-profile.js?v=4"></script>
+    <script defer src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+
+    "version": "0.2.0",
+
+    "configurations": [
+
+        {
+
+            "type": "chrome",
+
+            "request": "launch",
+
+            "name": "Finovate (localhost:3000)",
+
+            "url": "http://127.0.0.1:3000/auth.html",
+
+            "webRoot": "${workspaceFolder}",
+
+            "preLaunchTask": "npm: start"
+
+        }
+
+    ]
+
+}
+
